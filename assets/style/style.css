@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #F4D04E;
+    --white: #FFFFFF;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+
+    /* Spacing variables */
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-24: 24px;
+
+}
+
+body {
+    font-family:  "Figtree", sans-serif;
+}
+
+
+/* Import Figtree fonts */
+@font-face {
+    font-family: "Figtree-Medium";
+    src: url("../fonts/Figtree-VariableFont_wght.ttf") format("truetype"),
+         url("../fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: "Figtree-ExtraBold";
+    src: url("../fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: bold;
+}
+
+ /* Typography */
+
+h1{
+    font-family: "Figtree-ExtraBold";
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--gray-950);
+}
+
+h2, h3 {
+    font-family: "Figtree-Medium";
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--gray-500);
+}
+
+h3 {
+    font-size: 14px;
+    color: var(--gray-950);
+}
+
+.txt3-bold{
+    font-family: "Figtree-ExtraBold";
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--gray-950);
+}
+
+/* Div class */
+
+.container {
+    background-color: var(--yellow);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: var(--white);
+    border: solid 1px black;
+    padding: var(--space-24);
+    border-radius: 20px;
+    margin: var(--space-24);  
+    box-shadow:8px 8px 0 rgba(0, 0, 0, 1);
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+} 
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-12);
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-12);
+}
+
+/* images */
+
+img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-author {
+    width: 32px;
+}
+
+button{
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    padding: var(--space-4) var(--space-12);
+
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+        
+
+}
