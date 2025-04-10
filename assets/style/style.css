@@ -48,7 +48,11 @@ h1{
     line-height: 150%;
     letter-spacing: 0px;
     color: var(--gray-950);
+}   
+h1:hover {
+    color: var(--yellow);
 }
+
 
 h2, h3 {
     font-family: "Figtree-Medium";
@@ -95,7 +99,7 @@ h3 {
     max-width: 360px;
     display: flex;
     flex-direction: column;
-    gap: var(--space-12);
+    gap: var(--space-24);
 } 
 
 .content{
@@ -129,7 +133,7 @@ button{
     background-color: var(--yellow);
     border: none;
     border-radius: 4px;
-    width: 100%;
+    width: fit-content;
     padding: var(--space-4) var(--space-12);
 
 }
@@ -139,6 +143,20 @@ button{
     .container {
         max-width: 375px;
     }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+
         
 
 }
