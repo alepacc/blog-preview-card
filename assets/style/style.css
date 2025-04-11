@@ -44,7 +44,7 @@ body {
 
 h1{
     font-family: "Figtree-ExtraBold";
-    font-size: 24px;
+    font-size: clamp(20px, 5vw, 24px);
     line-height: 150%;
     letter-spacing: 0px;
     color: var(--gray-950);
@@ -61,12 +61,12 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 16px);
     color: var(--gray-500);
 }
 
 h3 {
-    font-size: 14px;
+    font-size: clamp(12px, 3vw, 14px);
     color: var(--gray-950);
 }
 
@@ -139,7 +139,7 @@ button{
 }
 
 /* Responsive Design */
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
     .container {
         max-width: 375px;
     }
@@ -156,7 +156,4 @@ button{
         font-size: 12px;
     }
 
-
-        
-
-}
+} */
